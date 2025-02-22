@@ -1,4 +1,4 @@
-This is **phase-1/sub-phase-1A/project-001** from my ongoing self-challenge called [Purpose Driven Learning](https://github.com/hritik-agarwal/purpose-driven-learning/blob/main/README.md)
+This is **phase-1/sub-phase-1A/project-002** from my ongoing self-challenge called [Purpose Driven Learning](https://github.com/hritik-agarwal/purpose-driven-learning/blob/main/README.md)
 
 # 002 Quiz Platform
 
