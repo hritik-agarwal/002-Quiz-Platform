@@ -22,7 +22,7 @@ Basic quiz platform with vanilla js to learn data management, conditional render
 
 **Daily Progress**
 
-* [X] **Day 1 : 22nd Feb, Sat** : created repo, decided objectives, created UI wireframe
+* [X] **Day 1 : 22nd Feb, Sat** : created repo, objectives, UI wireframe, and UI for new question form
 * [ ] **Day 2 : 23rd Feb, Sun** :
 * [ ] **Day 3 : 24th Feb, Mon** :
 * [ ] **Day 4 : 25th Feb, Tue** :
@@ -34,10 +34,18 @@ Basic quiz platform with vanilla js to learn data management, conditional render
 
 ![image](https://github.com/user-attachments/assets/456f3bd0-9976-43ff-9dbe-41d3c58111e1)
 
-**Things I Learned**
-
-...
-
 **Deployment**
 
 ...
+
+**Things I Learned**
+
+Things that I learned while building this project.
+
+*CSS Learnings*
+
+- advanced selectors, variables, box-shadow, code readability
+
+*HTML Learnings*
+
+- id & classes naming, code readability
