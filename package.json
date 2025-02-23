@@ -1,0 +1,18 @@
+{
+  "name": "002.-quiz-platform",
+  "version": "1.0.0",
+  "description": "This is **phase-1/sub-phase-1A/project-002** from my ongoing self-challenge called [Purpose Driven Learning](https://github.com/hritik-agarwal/purpose-driven-learning/blob/main/README.md)",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Hritik Agarwal <hritikagarwal456@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "eslint": "^9.21.0",
+    "globals": "^16.0.0"
+  }
+}

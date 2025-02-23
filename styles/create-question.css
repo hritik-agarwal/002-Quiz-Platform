@@ -1,0 +1,74 @@
+
+
+/* Create Question View CSS */
+#create-question-form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex-grow: 1;
+    background-color: var(--bg-tertiary);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 700px;
+    margin-bottom: 20px;
+  }
+  #create-question-form > .input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+  }
+  #create-question-form label {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+  }
+  #create-question-form
+    :is(
+      input[type="text"],
+      input[type="number"],
+      input[type="date"],
+      select,
+      textarea
+    ) {
+    color: var(--text-muted);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    flex-grow: 1;
+    background-color: var(--bg-input);
+    font-family: monospace;
+  }
+  #create-question-form :is(input, select, textarea):focus {
+    outline: 1px solid var(--bg-hover);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  #create-question-form select {
+    cursor: pointer;
+  }
+  #create-question-form .input-options-list {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  #create-question-form > button[type="submit"] {
+    width: 200px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid var(--border);
+  }
+  #create-question-form > button[type="submit"]:disabled {
+    cursor: not-allowed;
+  }
+  #create-question-form > button[type="submit"]:hover:not(:disabled) {
+    background-color: var(--bg-selected);
+  }

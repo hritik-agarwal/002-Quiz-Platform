@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Platform</title>
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="../styles/question-banks.css" />
+  </head>
+  <body>
+    <!-- Main App Container -->
+    <div id="container">
+      <!-- Navigation Sidebar -->
+      <div id="sidebar">
+        <a id="app-name" href="../index.html">QUIZ Platform</a>
+        <div id="sidebar-app-sections">
+          <a class="nav-link" href="create-question.html">Create question</a>
+          <a class="nav-link active" href="#">Question banks</a>
+          <a class="nav-link" href="quizzes.html">View quizzes</a>
+          <a class="nav-link" href="play-quiz.html">Play quiz</a>
+        </div>
+        <div class="nav-link" id="tab-login-logout">Login/Logout</div>
+      </div>
+
+      <!-- Question Banks Markup -->
+      <div id="main-view">
+        <div id="view-question-banks" class="section-view">
+          <div class="view-heading">Question banks</div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="../scripts/question-bank.js"></script>
+  </body>
+</html>

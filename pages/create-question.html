@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Platform</title>
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="../styles/create-question.css" />
+  </head>
+  <body>
+    <!-- Main App Container -->
+    <div id="container">
+      <!-- Navigation Sidebar -->
+      <div id="sidebar">
+        <a id="app-name" href="../index.html">QUIZ Platform</a>
+        <div id="sidebar-app-sections">
+          <a class="nav-link active" href="#">Create question</a>
+          <a class="nav-link" href="question-bank.html">Question banks</a>
+          <a class="nav-link" href="quizzes.html">View quizzes</a>
+          <a class="nav-link" href="play-quiz.html">Play quiz</a>
+        </div>
+        <div class="nav-link" id="tab-login-logout">Login/Logout</div>
+      </div>
+
+      <!-- Create Question Markup -->
+      <div id="main-view">
+        <div id="view-create-question" class="section-view">
+          <div class="view-heading">Create question</div>
+
+          <!-- create question form -->
+          <form id="create-question-form">
+            <!-- question: description -->
+            <div class="input-field">
+              <label>Question</label>
+              <input
+                type="text"
+                name="ques-desc"
+                placeholder="Type question description"
+                required
+              />
+            </div>
+
+            <!-- question: solution -->
+            <div class="input-field">
+              <label>Solution</label>
+              <input
+                type="text"
+                name="ques-solution"
+                placeholder="Type solution (optional)"
+              />
+            </div>
+
+            <!-- question: type -->
+            <div class="input-field">
+              <label>Type</label>
+              <select name="ques-type" required>
+                <optgroup label="Select question type">
+                  <option value="single-choice" selected>Single choice</option>
+                  <option value="multi-choice">Multi choice</option>
+                  <option value="number">Number</option>
+                  <option value="date">Date</option>
+                  <option value="text">Text</option>
+                </optgroup>
+              </select>
+            </div>
+
+            <!-- question: bank -->
+            <div class="input-field">
+              <label>Question Bank</label>
+              <select name="ques-bank-select" class="hidden">
+                <option>Select a question bank</option>
+              </select>
+              <input
+                required
+                type="text"
+                name="ques-bank-text"
+                placeholder="Type question bank name"
+              />
+            </div>
+
+            <!-- question: answer -->
+            <div class="input-field">
+              <label>Answers</label>
+
+              <input
+                type="date"
+                name="ans-type-date"
+                id="ans-type-date"
+                class="ans-type hidden"
+              />
+
+              <input
+                type="number"
+                name="ans-type-number"
+                id="ans-type-number"
+                placeholder="Type answer value"
+                class="ans-type hidden"
+              />
+
+              <textarea
+                class="ans-type hidden"
+                name="ans-type-text"
+                id="ans-type-text"
+                rows="3"
+                placeholder="Type answer value"
+              ></textarea>
+
+              <div class="ans-type" id="ans-type-single-choice">
+                <div class="input-options-list">
+                  <input type="radio" name="ans-type-single-choice" checked />
+                  <input type="text" placeholder="Type option 1" />
+                </div>
+                <div class="input-options-list">
+                  <input type="radio" name="ans-type-single-choice" />
+                  <input type="text" placeholder="Type option 2" />
+                </div>
+                <div class="input-options-list">
+                  <input type="radio" name="ans-type-single-choice" />
+                  <input type="text" placeholder="Type option 3" />
+                </div>
+                <div class="input-options-list">
+                  <input type="radio" name="ans-type-single-choice" />
+                  <input type="text" placeholder="Type option 4" />
+                </div>
+              </div>
+
+              <div class="ans-type hidden" id="ans-type-multi-choice">
+                <div class="input-options-list">
+                  <input type="checkbox" name="ans-type-multi-choice" />
+                  <input type="text" placeholder="Type option 1" />
+                </div>
+                <div class="input-options-list">
+                  <input type="checkbox" name="ans-type-multi-choice" />
+                  <input type="text" placeholder="Type option 2" />
+                </div>
+                <div class="input-options-list">
+                  <input type="checkbox" name="ans-type-multi-choice" />
+                  <input type="text" placeholder="Type option 3" />
+                </div>
+                <div class="input-options-list">
+                  <input type="checkbox" name="ans-type-multi-choice" />
+                  <input type="text" placeholder="Type option 4" />
+                </div>
+              </div>
+            </div>
+
+            <!-- question: submit -->
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="../scripts/create-question.js"></script>
+  </body>
+</html>

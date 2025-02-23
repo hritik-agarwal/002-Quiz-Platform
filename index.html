@@ -4,158 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz Platform</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="global.css" />
   </head>
   <body>
     <!-- Main App Container -->
     <div id="container">
       <!-- Navigation Sidebar -->
       <div id="sidebar">
-        <div id="app-name">QUIZ Platform</div>
+        <a id="app-name" href="#">QUIZ Platform</a>
         <div id="sidebar-app-sections">
-          <div id="tab-create-question" class="section-tab active-tab">
-            Create question
-          </div>
-          <div id="tab-question-banks" class="section-tab">Question banks</div>
-          <div id="tab-create-quizzes" class="section-tab">View quizzes</div>
-          <div id="tab-play-a-quiz" class="section-tab">Let's quiz</div>
+          <a class="nav-link" href="pages/create-question.html"
+            >Create question</a
+          >
+          <a class="nav-link" href="pages/question-bank.html">Question banks</a>
+          <a class="nav-link" href="pages/quizzes.html">View quizzes</a>
+          <a class="nav-link" href="pages/play-quiz.html">Play quiz</a>
         </div>
-        <div id="tab-login-logout">Login/Logout</div>
+        <div class="nav-link" id="tab-login-logout">Login/Logout</div>
       </div>
 
-      <!-- Main App View -->
+      <!-- Create Question Markup -->
       <div id="main-view">
-        <!-- Create Question Markup -->
-        <div id="view-create-question" class="section-view active-view">
-          <div class="view-heading">Create question</div>
-
-          <!-- create question form -->
-          <form id="create-question-form">
-            <!-- question: description -->
-            <div class="input-field">
-              <label>Question</label>
-              <input
-                type="text"
-                name="input-ques-desc"
-                placeholder="Type question description"
-                required
-              />
-            </div>
-
-            <!-- question: explanation -->
-            <div class="input-field">
-              <label>Explanation</label>
-              <input
-                type="text"
-                name="input-ques-explantion"
-                placeholder="Type any solution explanation"
-              />
-            </div>
-
-            <!-- question: type -->
-            <div class="input-field">
-              <label>Type</label>
-              <select name="input-ques-type" required>
-                <option>Select question type</option>
-                <option value="single-choice">Single choice</option>
-                <option value="multi-choice">Multi choice</option>
-                <option value="number">Number</option>
-                <option value="date">Date</option>
-                <option value="text">Text</option>
-              </select>
-            </div>
-
-            <!-- question: bank -->
-            <div class="input-field">
-              <label>Question Bank</label>
-              <select name="input-ques-bank-select" class="hidden">
-                <option>Select a question bank</option>
-              </select>
-              <input
-                type="text"
-                name="input-ques-bank-text"
-                placeholder="Type question bank name"
-              />
-            </div>
-
-            <!-- question: answer -->
-            <div class="input-field">
-              <label>Answers</label>
-              <span class="text-muted">Choose a question type</span>
-              
-              <input type="date" name="input-ques-ans-date" class="hidden"/>
-              
-              <input
-                type="number"
-                name="input-ques-ans"
-                placeholder="Type answer value"
-                class="hidden"
-              />
-              
-              <textarea
-                name="input-ques-ans-text"
-                rows="3"
-                placeholder="Type answer value"
-                class="hidden"
-              ></textarea>
-              
-              <div class="hidden">
-                <div class="input-options-list">
-                  <input type="radio" name="input-ques-ans-radio" value="option-1">
-                  <input type="text" name="option-1" placeholder="Type option 1">
-                </div>
-                <div class="input-options-list">
-                  <input type="radio" name="input-ques-ans-radio" value="option-2">
-                  <input type="text" name="option-2" placeholder="Type option 2">
-                </div>
-                <div class="input-options-list">
-                  <input type="radio" name="input-ques-ans-radio" value="option-3">
-                  <input type="text" name="option-3" placeholder="Type option 3">
-                </div>
-                <div class="input-options-list">
-                  <input type="radio" name="input-ques-ans-radio" value="option-4">
-                  <input type="text" name="option-4" placeholder="Type option 4">
-                </div>
-              </div>
-
-              <div class="hidden">
-                <div class="input-options-list">
-                  <input type="checkbox" name="input-ques-ans-checkbox" value="option-1">
-                  <input type="text" name="option-1" placeholder="Type option 1">
-                </div>
-                <div class="input-options-list">
-                  <input type="checkbox" name="input-ques-ans-checkbox" value="option-2">
-                  <input type="text" name="option-2" placeholder="Type option 2">
-                </div>
-                <div class="input-options-list">
-                  <input type="checkbox" name="input-ques-ans-checkbox" value="option-3">
-                  <input type="text" name="option-3" placeholder="Type option 3">
-                </div>
-                <div class="input-options-list">
-                  <input type="checkbox" name="input-ques-ans-checkbox" value="option-4">
-                  <input type="text" name="option-4" placeholder="Type option 4">
-                </div>
-              </div>
-            </div>
-
-            <!-- question: submit -->
-             <button type="submit" disabled>Submit</button>
-          </form>
-        </div>
-
-        <!-- Question Banks Markup -->
-        <div id="view-question-banks" class="section-view">
-          <div class="view-heading">Question banks</div>
-        </div>
-
-        <!-- View Quizzes Markup -->
-        <div id="view-create-quizzes" class="section-view">
-          <div class="view-heading">View quizzes</div>
-        </div>
-
-        <!-- Let's Quiz Markup -->
-        <div id="view-play-a-quiz" class="section-view">
-          <div class="view-heading">Let's quiz</div>
+        <div id="view-welcome-screen" class="section-view">
+          <div class="view-heading">Welcome to Quiz App</div>
         </div>
       </div>
     </div>
